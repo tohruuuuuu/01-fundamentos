@@ -26,8 +26,7 @@ let juegosBorrado = juegos.splice(pos, 2);
 console.log({ juegosBorrado, juegos});
 
 let metroidIndex = juegos.indexOf('metroid');//key sensitive
-console.log({metroidIndex});
-
+console.log({metroidIndex})
 
 
 
