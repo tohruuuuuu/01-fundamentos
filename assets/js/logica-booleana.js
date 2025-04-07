@@ -34,4 +34,17 @@ console.log( regresaTrue() || regresaFalse() );// hay un true, regresa un true
 
 console.warn('asignaciones');
 
+const soyUndefined = undefined;
+const soyNull = null;
+const soyFalse = false;
 
+const a1 = false && 'hola mundo' && 156; // false y no lee los and
+
+const a2 = 'hola' && 'mundo' && soyFalse && true; 
+const a3 = soyFalse || 'ya no soy falso'; 
+const a4 = soyFalse || soyUndefined || soyNull || 'ya no soy falso de nuevo' || true; // retorna el string poq despues de leer un valor, ya no lee mas 
+const a5 = soyFalse || soyUndefined || regresaTrue || 'ya no soy falso de nuevo' || true; // retorna el regresaTrue poq despues de leer un valor, ya no lee mas 
+
+
+
+console.log({a1, a2, a3, a4, a5});
